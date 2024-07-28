@@ -91,3 +91,5 @@ const typed = new Typed("#logo", {
     showCursor: false,
     
 });
+
+typed.start();
