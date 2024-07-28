@@ -18,12 +18,14 @@ async function renderNotes() {
 
     notes.data.map((note) => {
         const newNote = document.createElement("div");
-        newNote.classList.add("container");
+        newNote.classList.add("card");
         const newTitle = document.createElement("h1");
+        newTitle.classList.add("note-title");
         const newContent = document.createElement("p");
+        newContent.classList.add("note-content");
         const dltBTN = document.createElement("button");
         dltBTN.classList.add("dlt-btn");
-        dltBTN.textContent = "hapus";
+        dltBTN.textContent = "DELETE!";
 
         dltBTN.addEventListener("click", async () => {
           const id = note._id;
@@ -78,9 +80,9 @@ addBtn.addEventListener("click", async () => {
 });
 
 const typed = new Typed("#logo", {
-  strings: ["こんにちは", "<i>Do you want to add a note?</i>"],
+  strings: ["こんにちは", "<i>Do you want to add a note?</i>", "Or", "Do You Like This Color?", "Im Use Blazing Yellow", "#FEE715"],
     typeSpeed: 72,
-    smartBackspace: true,
+    fadeOut: true,
     loop: true,
     showCursor: false,
     

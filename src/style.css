@@ -19,8 +19,8 @@ header {
 
 .form-notes {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: grid;
+  justify-content: center;
   align-items: center;
   padding: 20px;
 }
@@ -34,4 +34,42 @@ header {
   padding: 1px;
   background-color: #ffe715;
   color: black;
+}
+
+.card {
+  margin: auto;
+  padding: 21px;
+  text-align: center;
+  width: 180px;
+  height: 125px;
+  background-color: #fff5f5;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0.5, 0.2));
+}
+
+.note-content {
+  color: rgb(8, 8, 8);
+  padding: 0px;
+  margin: 5px;
+}
+
+.note-title {
+  color: rgb(0, 0, 0);
+  padding: 0px;
+  margin: 0px;
+}
+
+.dlt-btn {
+  margin: 0px;
+  width: 100px;
+  padding: 5px;
+  border-radius: 10px;;
+  background-color: #000000;
+  color: #fff5f5;
+  outline: auto;
+}
+
+.dlt-btn:hover {
+  background-color: #fff5f5;
+  color: #000000;
 }
