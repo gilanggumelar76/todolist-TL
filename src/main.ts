@@ -17,9 +17,11 @@ async function renderNotes() {
     }
 
     notes.data.map((note) => {
+        const notesGrid = document.createElement("div");
+        notesGrid.classList.add("notes-grid");
         const newNote = document.createElement("div");
         newNote.classList.add("card");
-        const newTitle = document.createElement("h1");
+        const newTitle = document.createElement("h3");
         newTitle.classList.add("note-title");
         const newContent = document.createElement("p");
         newContent.classList.add("note-content");
@@ -51,6 +53,8 @@ async function renderNotes() {
         newNote.append(newContent);
         newNote.append(dltBTN);
         document.body.append(newNote);
+        document.body.append(notesGrid);
+        notesGrid.append(newNote);
     });
 }
 
@@ -80,7 +84,7 @@ addBtn.addEventListener("click", async () => {
 });
 
 const typed = new Typed("#logo", {
-  strings: ["こんにちは", "<i>Do you want to add a note?</i>", "Or", "Do You Like This Color?", "Im Use Blazing Yellow", "#FEE715"],
+  strings: ["こんにちは", "<i>Do you want to add a note?</i>", "Or", "Do You Like This Color?", "Im Use Blazing Yellow", "#FEE715", "#PAPERLESS"],
     typeSpeed: 72,
     fadeOut: true,
     loop: true,
