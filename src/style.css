@@ -4,15 +4,34 @@
 
 body {
   margin: 0px;
-  color: aliceblue;
-  background-color: rgb(6, 4, 17);
+  color: rgb(0, 4, 8);
+  background-color: rgb(255, 255, 255);
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #04000c;
-  padding: 26px;
+  background-color: #050505;
+  padding: 32px;
   color: rgb(255, 255, 255);
+}
+
+.form-notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#moving-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  padding: 1px;
+  background-color: #ffe715;
+  color: black;
 }

@@ -78,8 +78,10 @@ addBtn.addEventListener("click", async () => {
 });
 
 const typed = new Typed("#logo", {
-  strings: ["こんにちは", "<i>Whats Your Creative Types?</i>"],
-    typeSpeed: 100,
+  strings: ["こんにちは", "<i>Do you want to add a note?</i>"],
+    typeSpeed: 72,
+    smartBackspace: true,
     loop: true,
-    showCursor: false
+    showCursor: false,
+    
 });
